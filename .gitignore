@@ -10,3 +10,4 @@ Gemfile.lock
 test/dummy/public/system/
 test/dummy/public/system/dragonfly
 .DS_STORE
+.rubocop-https-*
