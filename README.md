@@ -4,39 +4,6 @@ Workarea Hover Zoom
 Hover Zoom plugin for the Workarea commerce platform adds zoom capabilities (desktop/mobile) on your product primary images.
 
 
-Getting Started
---------------------------------------------------------------------------------
-
-This gem contains a rails engine that must be mounted onto a host Rails application.
-
-You must have access to a WebLinc gems server to use this gem. Add your gems server credentials to Bundler:
-
-    bundle config gems.weblinc.com my_username:my_password
-
-Or set the appropriate environment variable in a shell startup file:
-
-    export BUNDLE_GEMS__WEBLINC__COM='my_username:my_password'
-
-Then add the gem to your application's Gemfile specifying the source:
-
-    # ...
-    gem 'workarea-hover_zoom', source: 'https://gems.weblinc.com'
-    # ...
-
-Or use a source block:
-
-    # ...
-    source 'https://gems.weblinc.com' do
-      gem 'workarea-hover_zoom'
-    end
-    # ...
-
-Update your application's bundle.
-
-    cd path/to/application
-    bundle
-
-
 Setup
 --------------------------------------------------------------------------------
 
@@ -135,15 +102,29 @@ This plugin is acting as an orchestrator of two jQuery plugins:
 
 Therefore if you need more flexibility you can come up with your own solution without re-inventing the wheel.
 
-Documentation & Support
+Getting Started
 --------------------------------------------------------------------------------
 
-See [Workarea Developer](http://developer.weblinc.com) for a list of documentation and support resources for developers.
+This gem contains a Rails engine that must be mounted onto a host Rails application.
+
+Then add the gem to your application's Gemfile specifying the source:
+
+    # ...
+    gem 'workarea-hover_zoom'
+    # ...
+
+Update your application's bundle.
+
+    cd path/to/application
+    bundle
 
 
-Copyright & Licensing
+Workarea Platform Documentation
 --------------------------------------------------------------------------------
 
-Copyright Workarea 2017. All rights reserved.
+See [https://developer.workarea.com](https://developer.workarea.com) for Workarea platform documentation.
 
-For licensing, contact sales@workarea.com.
+License
+--------------------------------------------------------------------------------
+
+Workarea Hover Zoom is released under the [Business Software License](LICENSE)

@@ -1,11 +1,8 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "git@github.com:#{repo}.git" }
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gemspec
 
-gem 'rubocop', '0.52.1', require: false
-gem 'workarea', '>= 3.2.0'
-
-group :test do
-  gem 'workarea-testing', '>= 3.2.0'
-end
+gem 'workarea', github: 'workarea-commerce/workarea'
+gem 'workarea-jquery_magnify', github: 'workarea-commerce/workarea-jquery-magnify'
+gem 'workarea-jquery_zoom', github: 'workarea-commerce/workarea-jquery-zoom'
