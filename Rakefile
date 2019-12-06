@@ -37,6 +37,7 @@ task :release do
   system 'git push --tags'
 
   system 'gem build workarea-hover_zoom.gemspec'
+  system "gem push workarea-hover_zoom-#{Workarea::HoverZoom::VERSION}.gem"
   system "gem push workarea-hover_zoom-#{Workarea::HoverZoom::VERSION}.gem --host #{host}"
   system "rm workarea-hover_zoom-#{Workarea::HoverZoom::VERSION}.gem"
 end
